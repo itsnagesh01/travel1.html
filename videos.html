@@ -4,26 +4,103 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Fitness Channel</title>
+    <style>
+        /* Attractive background with gradient */
+        body {
+            margin: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+             background-image: url(images1/home1.jpg);
+             background-position: center;
+             background-size: cover;
+            color: white;
+            text-align: center;
+            animation: fadeInBody 2s ease-in;
+        }
+
+        @keyframes fadeInBody {
+            from {
+                opacity: 0;
+            }
+
+            to {
+                opacity: 1;
+            }
+        }
+
+        header {
+            padding: 20px;
+            background-color: rgba(0, 0, 0, 0.4);
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #fff;
+            margin: 0 15px;
+            font-weight: bold;
+            transition: color 0.3s;
+        }
+
+        nav a:hover {
+            color: #ffdd57;
+        }
+
+        h1 {
+            font-size: 3em;
+            margin-top: 10px;
+            animation: slideIn 2s ease-out;
+        }
+
+        h2 {
+            margin-top: 40px;
+            font-size: 2em;
+            animation: fadeIn 2.5s ease-in-out;
+        }
+
+        @keyframes slideIn {
+            from {
+                transform: translateY(-50px);
+                opacity: 0;
+            }
+
+            to {
+                transform: translateY(0);
+                opacity: 1;
+            }
+        }
+
+        @keyframes fadeIn {
+            0% {
+                opacity: 0;
+            }
+
+            100% {
+                opacity: 1;
+            }
+        }
+
+        iframe {
+            margin-top: 30px;
+            border-radius: 12px;
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4);
+        }
+    </style>
 </head>
 
 <body>
     <header>
-
+        <h1>Welcome to My our youtube Channel</h1>
         <nav>
             <a href="index.html">Home</a>
-
-            
             <a href="about.html">About</a>
-
             <a href="plans.html">Plans</a>
-           
             <a href="videos.html">Video</a>
-
             <a href="contact.html">Contact</a>
-
         </nav>
     </header>
+
+    <h2>🔥 Watch Our Latest  Video 🔥</h2>
 
     <iframe width="560" height="315" src="https://www.youtube.com/embed/2uVOGbl7I10?si=PpvOqVInCOlTigNL"
         title="YouTube video player" frameborder="0"

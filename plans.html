@@ -1,83 +1,135 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+
+
+  <meta charset="UTF-8">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    body {
+      margin: 0px;
+      padding: 0px;
+      background-color: #f7f1f4;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      color: #333;
+    }
+
+    header {
+      padding: 20px;
+    }
+
+    nav {
+      text-align: right;
+      margin-top: 10px;
+    }
+
+    nav a {
+      text-decoration: none;
+      color: #333;
+      font-weight: bold;
+      margin: 15px;
+      font-size: 1.1em;
+      transition: color 0.3s;
+    }
+
+    nav a:hover {
+      color: blueviolet;
+    }
+
+    table {
+      width: 90%;
+      margin: 40px auto;
+      border-collapse: collapse;
+      background-color: #fff;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      font-size: 16px;
+    }
+
+    th,
+    td {
+      padding: 15px;
+      text-align: left;
+      border: 1px solid #ddd;
+    }
+
+    thead {
+      background-color: #c09bc7;
+      color: white;
+    }
+
+    tbody tr:nth-child(even) {
+      background-color: #f2f2f2;
+    }
+
+    tbody tr:hover {
+      background-color: #e5d4ea;
+    }
+
+    th {
+      font-size: 18px;
+    }
+
+    td {
+      line-height: 1.6;
+    }
+  </style>
 </head>
+
 <body>
 
-<header>
+  <header>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="plans.html">Plans</a>
+      <a href="videos.html">Video</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
 
-        <nav>
-             <a href="index.html">Home</a>
+  <table>
+    <thead>
+      <tr>
+        <th>Place</th>
+        <th>2–3 Days</th>
+        <th>5–7 Days</th>
+        <th>8–10+ Days</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Manali</td>
+        <td>3 Days / 2 Nights: ₹5,800–₹9,500;<br>Local sightseeing (Hadimba, Solang Valley)</td>
+        <td>5 Days / 4 Nights: ₹11,000–₹19,000;<br>Adds Rohtang, Kullu, Kasol excursions</td>
+        <td>7 Days / 6 Nights: ₹14,000–₹24,000;<br>Includes Shimla, Amritsar options</td>
+      </tr>
+      <tr>
+        <td>Kashmir</td>
+        <td>3 Days / 2 Nights: Srinagar houseboat, Dal Lake shikara & local sights</td>
+        <td>5–7 Days: Srinagar → Gulmarg → Pahalgam itinerary including full sightseeing</td>
+        <td>10+ Days: Extended Kashmir + Ladakh or Himachal circuit</td>
 
-            
-            <a href="about.html">About</a>
+      </tr>
+      <tr>
+        <td>Ladakh</td>
+        <td>4–5 Days: Leh, Pangong Tso, Nubra Valley via Khardung La</td>
 
-            <a href="plans.html">Plans</a>
-           
-            <a href="videos.html">Video</a>
-
-            <a href="contact.html">Contact</a>
-
-        </nav>
-
-        <div style="text-align: center;">
-            <h1 style="color: rgb(255, 0, 0);">plans for you</h1>
-
-        </div>
-    </header>
+        <td>6–8 Days: Classic Ladakh circuit (including monasteries, desert camping)</td>
+        <td>8–11 Days: Adventure & culture, biking or trekking tours including Markha/Chang La etc.</td>
+      </tr>
+      <tr>
+        <td>Goa</td>
+        <td>3 Days / 2 Nights: North Goa beaches, water sports, nightlife</td>
+        <td>5–7 Days: North + South Goa, spice plantation, temple visits, heritage walks</td>
+        <td>8+ Days: Relaxed itinerary with sightseeing, island cruise, dolphin safari, culture</td>
+      </tr>
 
 
-
-
-
-    <table border="1">
-  <thead>
-    <tr>
-      <th>Place</th>
-      <th>2–3 Days</th>
-      <th>5–7 Days</th>
-      <th>8–10+ Days</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>Manali</td>
-      <td>3 Days / 2 Nights: ₹5,800–₹9,500; <br>local sightseeing (Hadimba, Solang Valley)</td>
-      <td>5 Days / 4 Nights: ₹11,000–₹19,000; adds Rohtang, Kullu, Kasol excursions</td>
-      <td>7 Days / 6 Nights: ~₹14,000–₹24,000; includes Shimla, Amritsar options </td>
-    </tr>
-    <tr>
-      <td>Kashmir</td>
-      <td>3 Days / 2 Nights: Srinagar houseboat, Dal Lake shikara & local sights</td>
-      <td>5–7 Days: Srinagar → Gulmarg → Pahalgam itinerary including full sightseeing</td>
-      <td>10+ Days: Extended Kashmir + Ladakh or Himachal circuit </td>
-    </tr>
-    <tr>
-      <td>Ladakh</td>
-      <td>4–5 Days: Leh, Pangong Tso, Nubra Valley via Khardung La </td>
-      <td>6–8 Days: Classic Ladakh circuit (including monasteries, desert camping) </td>
-      <td>8–11 Days: Adventure & culture, biking or trekking tours including Markha/Chang La etc.</td>
-    </tr>
-    <tr>
-      <td>Goa</td>
-      <td>3 Days / 2 Nights: North Goa beaches, water sports, nightlife</td>
-      <td>5–7 Days: North + South Goa, spice plantation, temple visits, heritage walks</td>
-      <td>8+ Days: Relaxed itinerary with sightseeing, island cruise, dolphin safari, culture </td>
-    </tr>
-  </tbody>
-</table>
+  </table>
 
 </body>
+
 </html>
-
-
-
-
-
-
-
-
-
