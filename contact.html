@@ -4,110 +4,191 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-     <style>
-        body{
-            margin:0px;
-            padding:0px;
-            background-color:#ecd2e0; 
+    <title>Contact | TrippyGo</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: #f9f1f6;
+            font-family: Arial, sans-serif;
         }
-        header{
-            
-            padding:20px;
 
+        header {
+            background-color: #d48fb8;
+            padding: 20px 40px;
         }
-      
-        nav a{
-            text-decoration: none;
-            color:black;
-            font-weight: bold;
-            margin:15px;
 
-        }
-        nav a:hover{
-            color:blueviolet;
-        }
-         nav{
+        nav {
             text-align: right;
-            margin-top: 10px;
-           
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #fff;
+            font-weight: bold;
+            margin: 0 15px;
+            font-size: 18px;
+        }
+
+        nav a:hover {
+            color: #4b006e;
+        }
+
+        h1.page-title {
+            text-align: center;
+            font-size: 42px;
+            color: #6e004f;
+            margin-top: 30px;
+            text-transform: uppercase;
+        }
+
+        fieldset {
+            width: 80%;
+            margin: 30px auto;
+            padding: 30px;
+            background-color: #fff;
+            border: 2px solid #d48fb8;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        legend {
+            text-align: center;
+            font-size: 32px;
+            font-weight: bold;
+            color: #a52a2a;
+            text-transform: capitalize;
+        }
+
+        form {
+            padding: 20px;
+        }
+
+        label {
+            display: block;
+            font-size: 18px;
+            margin-bottom: 5px;
+            color: #333;
+        }
+
+        input[type="text"],
+        input[type="number"],
+        textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 20px;
+            border: 1px solid #ccc;
+            border-radius: 6px;
+            font-size: 16px;
+        }
+
+        textarea {
+            resize: vertical;
+        }
+
+        input[type="submit"] {
+            background-color: #d48fb8;
+            color: white;
+            padding: 12px 25px;
+            font-size: 16px;
+            border: none;
+            border-radius: 6px;
+            cursor: pointer;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #b86ca0;
+        }
+
+        hr {
+            margin: 30px auto;
+            width: 80%;
+            border: 1px solid #ccc;
+        }
+
+        h2 {
+            color: #6e004f;
+        }
+
+        .contact-info {
+            margin-bottom: 15px;
+        }
+
+        .contact-info p {
+            margin: 5px 0 0 0;
+            font-size: 16px;
+        }
+
+        .contact-info a {
+            color: #6e004f;
+            text-decoration: none;
+        }
+
+        .contact-info a:hover {
+            text-decoration: underline;
         }
     </style>
 </head>
 
 <body>
 
-     <header>
-      
-
+    <header>
         <nav>
             <a href="index.html">Home</a>
-
-            
             <a href="about.html">About</a>
-
             <a href="plans.html">Plans</a>
-           
-            <a href="videos.html">Video</a>
-
+            <a href="videos.html">Videos</a>
             <a href="contact.html">Contact</a>
-
         </nav>
-      
     </header>
-    <hr>
+
+    <h1 class="page-title">Contact Us</h1>
+
     <fieldset>
-        <legend style="text-align: center;  font-size: 40px; color: brown;"  > 
-          
-            contact form 
-        </legend>
+        <legend>Contact Form</legend>
         <form>
-            <label>first name:</label>
-            <input type=" text" placeholder="enter first name" /><br><br>
+            <label>First Name:</label>
+            <input type="text" placeholder="Enter first name" />
 
-        <label>last name:</label>
-        <input type="text" placeholder="enter last name" /><br><br>
+            <label>Last Name:</label>
+            <input type="text" placeholder="Enter last name" />
 
-        <label>EMAIL:</label>
-        <input type="text" placeholder="enter email" /><br><br>
+            <label>Email:</label>
+            <input type="text" placeholder="Enter email" />
 
-        <label>phone number:</label>
-        <input type="number" /> <br><br>
+            <label>Phone Number:</label>
+            <input type="number" placeholder="Enter phone number" />
 
-       
+            <label>Password:</label>
+            <input type="text" placeholder="Enter strong password" />
 
-        <label>password</label>
-        <input type="text" placeholder="enter strong password" /><br><br>
+            <label>Your Plan:</label>
+            <input type="text" placeholder="Enter your plan" />
 
+            <input type="text" placeholder="Enter number of days" />
 
+            <label>Your Message:</label>
+            <textarea placeholder="Ask something" rows="5" cols="20"></textarea>
 
-        <label>your plan:</label>
-        <input type="text" placeholder="enter your plan"/><br><br>
-          <input type="text" placeholder=" enter no of days "/><br><br>
-           
-        
-   
-            <textarea placeholder="ask something" rows="5" cols="20"></textarea>
-
-
-
-        <input type="submit" style="background-color: aqua;">
-        <hr>
-        <hr>
-        
-        <h2>Contact Us: </h2>
-    
-    <div class="contact-info">
-      <label>Email:</label>
-      <p><a href="mailto:example@example.com">thetrippygo@gmail.com</a></p>
-    </div>
-
-    <div class="contact-info">
-      <label style="font-size: 20px;">Phone:</label>
-      <p>91-5876556784</p>
-    </div>
+            <input type="submit" value="Submit">
         </form>
     </fieldset>
+
+    <hr>
+
+    <div style="width: 80%; margin: auto;">
+        <h2>Contact Information</h2>
+
+        <div class="contact-info">
+            <label>Email:</label>
+            <p><a href="mailto:thetrippygo@gmail.com">thetrippygo@gmail.com</a></p>
+        </div>
+
+        <div class="contact-info">
+            <label style="font-size: 20px;">office services:</label>
+            <p>+91-5876556784</p>
+        </div>
+    </div>
 
 </body>
 

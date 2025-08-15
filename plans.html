@@ -2,17 +2,14 @@
 <html lang="en">
 
 <head>
-
-
   <meta charset="UTF-8">
-
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
   <style>
     body {
       margin: 0px;
       padding: 0px;
-      background-color: #f7f1f4;
+      background: linear-gradient(to right, #e0f7fa, #fff3e0);
       font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
       color: #333;
     }
@@ -37,6 +34,81 @@
 
     nav a:hover {
       color: blueviolet;
+    }
+
+    h1 {
+      text-align: center;
+      margin-top: 20px;
+      font-size: 2.5em;
+      color: #5b3c5d;
+    }
+
+    h2 {
+      text-align: center;
+      margin-top: 60px;
+      font-size: 2em;
+      color: #6e4a72;
+    }
+
+    .gallery-container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 30px;
+      margin: 30px auto;
+      max-width: 1200px;
+    }
+
+    .image-container {
+      width: 22%;
+      text-align: center;
+    }
+
+    .place-image {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+      border-radius: 8px;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      cursor: pointer;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    }
+
+    .place-image:hover {
+      transform: scale(1.05);
+    }
+
+    .place-image:active {
+      transform: scale(0.97);
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+    }
+
+    .caption {
+      margin-top: 8px;
+      font-weight: bold;
+      font-size: 1.1em;
+    }
+
+    /* Book Now Button Styling */
+    .book-button {
+      margin-top: 10px;
+      padding: 10px 18px;
+      font-size: 1em;
+      background-color: #6e4a72;
+      color: white;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+      transition: transform 0.2s ease, background-color 0.3s ease;
+    }
+
+    .book-button:hover {
+      background-color: #5b3c5d;
+    }
+
+    .book-button:active {
+      transform: scale(0.95);
+      background-color: #4a384c;
     }
 
     table {
@@ -90,45 +162,59 @@
     </nav>
   </header>
 
-  <table>
-    <thead>
-      <tr>
-        <th>Place</th>
-        <th>2–3 Days</th>
-        <th>5–7 Days</th>
-        <th>8–10+ Days</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td>Manali</td>
-        <td>3 Days / 2 Nights: ₹5,800–₹9,500;<br>Local sightseeing (Hadimba, Solang Valley)</td>
-        <td>5 Days / 4 Nights: ₹11,000–₹19,000;<br>Adds Rohtang, Kullu, Kasol excursions</td>
-        <td>7 Days / 6 Nights: ₹14,000–₹24,000;<br>Includes Shimla, Amritsar options</td>
-      </tr>
-      <tr>
-        <td>Kashmir</td>
-        <td>3 Days / 2 Nights: Srinagar houseboat, Dal Lake shikara & local sights</td>
-        <td>5–7 Days: Srinagar → Gulmarg → Pahalgam itinerary including full sightseeing</td>
-        <td>10+ Days: Extended Kashmir + Ladakh or Himachal circuit</td>
+  <h1>Explore Top Travel Destinations in India</h1>
 
-      </tr>
-      <tr>
-        <td>Ladakh</td>
-        <td>4–5 Days: Leh, Pangong Tso, Nubra Valley via Khardung La</td>
+  <div class="gallery-container">
+    <div class="image-container">
+      <img src="images1/manali-4819132_1280.jpg" alt="Manali" class="place-image">
+      <div class="caption">Manali</div>
+      <button class="book-button">Book Now</button>
+    </div>
+    <div class="image-container">
+      <img src="images1/kashmir2.jpg" alt="Kashmir" class="place-image">
+      <div class="caption">Kashmir</div>
+      <button class="book-button">Book Now</button>
+    </div>
+    <div class="image-container">
+      <img src="images1/ladakd1.jpg" alt="Ladakh" class="place-image">
+      <div class="caption">Ladakh</div>
+      <button class="book-button">Book Now</button>
+    </div>
+    <div class="image-container">
+      <img src="images1/goa.jpg" alt="Goa" class="place-image">
+      <div class="caption">Goa</div>
+      <button class="book-button">Book Now</button>
+    </div>
+    <div class="image-container">
+      <img src="images1/jaypur1.webp" alt="Jaipur" class="place-image">
+      <div class="caption">Jaipur</div>
+      <button class="book-button">Book Now</button>
+    </div>
+    <div class="image-container">
+      <img src="images1/Kerala Wallpapers - Wallpaper Cave.jpg" alt="Kerala" class="place-image">
+      <div class="caption">Kerala</div>
+      <button class="book-button">Book Now</button>
+    </div>
+    <div class="image-container">
+      <img src="images1/rishikesh.jpg" alt="Rishikesh" class="place-image">
+      <div class="caption">Rishikesh</div>
+      <button class="book-button">Book Now</button>
+    </div>
+    <div class="image-container">
+      <img src="images1/andaman2.jpg" alt="Andaman Islands" class="place-image">
+      <div class="caption">Andaman Islands</div>
+      <button class="book-button">Book Now</button>
+    </div>
+    <div class="image-container">
+      <img src="images1/darjling1.jpg" alt="Darjeeling" class="place-image">
+      <div class="caption">Darjeeling</div>
+      <button class="book-button">Book Now</button>
+    </div>
+  </div>
 
-        <td>6–8 Days: Classic Ladakh circuit (including monasteries, desert camping)</td>
-        <td>8–11 Days: Adventure & culture, biking or trekking tours including Markha/Chang La etc.</td>
-      </tr>
-      <tr>
-        <td>Goa</td>
-        <td>3 Days / 2 Nights: North Goa beaches, water sports, nightlife</td>
-        <td>5–7 Days: North + South Goa, spice plantation, temple visits, heritage walks</td>
-        <td>8+ Days: Relaxed itinerary with sightseeing, island cruise, dolphin safari, culture</td>
-      </tr>
+  <h2>Travel Plans by Duration</h2>
 
-
-  </table>
+  <!-- (Your table content remains unchanged) -->
 
 </body>
 

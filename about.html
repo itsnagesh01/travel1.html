@@ -2,17 +2,15 @@
 <html lang="en">
 
 <head>
-  
     <meta charset="UTF-8" />
-   
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-   <title>TrippyGo Travel</title>
+    <title>TrippyGo Travel</title>
     <style>
         body {
             margin: 0;
             padding: 0;
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            background-color:#a7abde;
+            background-color: #a7abde;
             color: #333;
         }
 
@@ -39,7 +37,6 @@
 
         .banner {
             background-image: url('images1/banner.jpg');
-            /* Replace with your banner image path */
             background-size: cover;
             background-position: center;
             color: white;
@@ -84,6 +81,7 @@
         section h1,
         section h2 {
             color: #5a2a71;
+            text-shadow: #5a2a71;
         }
 
         ul {
@@ -102,6 +100,13 @@
             height: 1px;
             background-color: #ccc;
             margin: 40px 0;
+        }
+
+        .social-icon {
+            width: 20px;
+            height: 20px;
+            vertical-align: middle;
+            margin-right: 8px;
         }
     </style>
 </head>
@@ -130,26 +135,26 @@
     <div class="gallery">
         <img src="images1/goa.jpg" alt="Goa" />
         <img src="images1/ladakh-7127801_640.jpg" alt="Ladakh" />
-        <img src="images1/malvan1.jpg" alt="Malvan" />
+        <img src="images1/andaman2.jpg" alt="Malvan" />
         <img src="images1/darjling1.jpg" alt="Darjeeling" />
         <img src="images1/jaypur1.webp" alt="Jaipur" />
         <img src="images1/lake-2594425_640.jpg" alt="Lake" />
     </div>
 
     <!-- About Section -->
-    <section>
+    <section style="color: aliceblue;">
         <h1>About TrippyGo</h1>
         <p>Hello! I’m Nagesh, a travel enthusiast who loves exploring new places and cultures.</p>
         <p>I created this website to share my travel experiences, tips, and beautiful photos with you.</p>
-        <p>So far, I’ve visited amazing destinations like Paris, Bali, and the Swiss Alps, and I hope to inspire
+        <p>So far, I’ve visited amazing destinations like Ladakh, Jaipur, and Goa, and I hope to inspire
             you to travel too!</p>
-        <p>If you want to get in touch, you can email me at [your-email@example.com].</p>
+        <p>If you want to get in touch, you can email me at <a href="mailto:your-email@example.com">your-email@example.com</a>.</p>
     </section>
 
     <!-- Travel Tips -->
     <section>
         <h2>Travel Safety Tips</h2>
-        <ul>
+        <ul style="color:aliceblue">
             <li>Keep your valuables secure and avoid showing expensive items in public.</li>
             <li>Always stay aware of your surroundings and avoid isolated places at night.</li>
             <li>Carry a basic first aid kit and drink plenty of water.</li>
@@ -160,11 +165,36 @@
         </ul>
     </section>
 
+    <!-- Contact Us Section -->
+    <section>
+        <h2>Contact Us</h2>
+        <ul>
+            <li><strong>Email:</strong> <a href="mailto:your-email@example.com">your-email@example.com</a></li>
+            <li><strong>Phone:</strong> +91-9876543210</li>
+            <li><strong>Follow us on:</strong>
+                <ul>
+                    <li>
+                        <img src="images1/social (1).png" alt="Instagram" class="social-icon" />
+                        <a href="#" target="_blank">Instagram</a>
+                    </li>
+                    <li>
+                        <img src="images1/social.png" alt="Facebook" class="social-icon" />
+                        <a href="#" target="_blank">Facebook</a>
+                    </li>
+                    <li>
+                        <img src="images1/social (2).png" alt="Twitter" class="social-icon" />
+                        <a href="#" target="_blank">Twitter</a>
+                    </li>
+                </ul>
+            </li>
+            <li><strong>Location:</strong> Pune, Maharashtra, India</li>
+        </ul>
+    </section>
+
     <!-- Scrolling Message -->
-    <marquee bgcolor="red" height="100">
+    <marquee style="background-color: #ced1f8; height:80px; color: #5a2a71;">
         Discover new places, new people, and a new you — welcome to TRIPPYGO...
     </marquee>
-
 </body>
 
 </html>
