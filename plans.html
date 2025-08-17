@@ -40,7 +40,8 @@
       color: blueviolet;
     }
 
-    h1, h2 {
+    h1,
+    h2 {
       text-align: center;
       color: #5b3c5d;
       margin-top: 20px;
@@ -85,7 +86,8 @@
       font-weight: bold;
     }
 
-    .book-button {
+    .check-button,
+    .table-button {
       margin-top: 10px;
       padding: 10px 18px;
       font-size: 1em;
@@ -97,8 +99,46 @@
       transition: background-color 0.3s ease;
     }
 
-    .book-button:hover {
-      background-color: #5b3c5d;
+    .check-button:hover,
+    .table-button:hover {
+      background-color:orange;
+    }
+
+    /* Table Styling */
+    table {
+      width: 95%;
+      margin: 40px auto;
+      border-collapse: collapse;
+      background-color: #fff;
+      box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+      font-size: 15px;
+      border-radius: 10px;
+      overflow: hidden;
+    }
+
+    th,
+    td {
+      padding: 14px 16px;
+      text-align: left;
+      border-bottom: 1px solid #ddd;
+    }
+
+    thead {
+      background-color: #8e44ad;
+      color: white;
+    }
+
+    tbody tr:nth-child(even) {
+      background-color: #f9f5fb;
+    }
+
+    tbody tr:hover {
+      background-color: #f0e1f5;
+    }
+
+    th:last-child,
+    td:last-child {
+      text-align: center;
     }
 
     /* Responsive Styles */
@@ -109,16 +149,12 @@
     }
 
     @media (max-width: 768px) {
-      h1 {
-        font-size: 2em;
-      }
-
-      h2 {
-        font-size: 1.5em;
-      }
-
       .image-container {
         width: 45%;
+      }
+
+      table {
+        font-size: 14px;
       }
     }
 
@@ -135,25 +171,25 @@
         font-size: 1em;
       }
 
-      h1 {
-        font-size: 1.6em;
-      }
-
-      h2 {
-        font-size: 1.3em;
-      }
-
       .image-container {
-        width: 48%;
+        width: 100%;
       }
 
       .place-image {
         height: 180px;
       }
 
-      .book-button {
+      .check-button,
+      .table-button {
         font-size: 0.9em;
         padding: 8px 14px;
+      }
+
+      table,
+      th,
+      td {
+        font-size: 13px;
+        padding: 10px;
       }
     }
   </style>
@@ -176,53 +212,145 @@
     <div class="image-container">
       <img src="images1/manali-4819132_1280.jpg" alt="Manali" class="place-image">
       <div class="caption">Manali</div>
-      <button class="book-button">Book Now</button>
+      <button class="check-button">Check This</button>
     </div>
     <div class="image-container">
       <img src="images1/kashmir2.jpg" alt="Kashmir" class="place-image">
       <div class="caption">Kashmir</div>
-      <button class="book-button">Book Now</button>
+      <button class="check-button">Check This</button>
     </div>
     <div class="image-container">
       <img src="images1/ladakd1.jpg" alt="Ladakh" class="place-image">
       <div class="caption">Ladakh</div>
-      <button class="book-button">Book Now</button>
+      <button class="check-button">Check This</button>
     </div>
     <div class="image-container">
       <img src="images1/goa.jpg" alt="Goa" class="place-image">
       <div class="caption">Goa</div>
-      <button class="book-button">Book Now</button>
+      <button class="check-button">Check This</button>
     </div>
     <div class="image-container">
       <img src="images1/jaypur1.webp" alt="Jaipur" class="place-image">
       <div class="caption">Jaipur</div>
-      <button class="book-button">Book Now</button>
+      <button class="check-button">Check This</button>
     </div>
     <div class="image-container">
       <img src="images1/Kerala Wallpapers - Wallpaper Cave.jpg" alt="Kerala" class="place-image">
       <div class="caption">Kerala</div>
-      <button class="book-button">Book Now</button>
+      <button class="check-button">Check This</button>
     </div>
     <div class="image-container">
       <img src="images1/rishikesh.jpg" alt="Rishikesh" class="place-image">
       <div class="caption">Rishikesh</div>
-      <button class="book-button">Book Now</button>
+      <button class="check-button">Check This</button>
     </div>
     <div class="image-container">
       <img src="images1/andaman2.jpg" alt="Andaman Islands" class="place-image">
       <div class="caption">Andaman Islands</div>
-      <button class="book-button">Book Now</button>
+      <button class="check-button">Check This</button>
     </div>
     <div class="image-container">
       <img src="images1/darjling1.jpg" alt="Darjeeling" class="place-image">
       <div class="caption">Darjeeling</div>
-      <button class="book-button">Book Now</button>
+      <button class="check-button">Check This</button>
     </div>
   </div>
 
   <h2>Travel Plans by Duration</h2>
-  <!-- Add table or plan content here if needed -->
 
-</body>
-
-</html>
+  <table>
+  <thead>
+    <tr>
+      <th>#</th>
+      <th>Location</th>
+      <th>Plan</th>
+      <th>Duration</th>
+      <th>Package</th>
+      <th>Highlights</th>
+      <th>Action</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>1</td>
+      <td>Manali</td>
+      <td>Manali Adventure</td>
+      <td>5 Days</td>
+      <td>₹15,000</td>
+      <td>Rohtang Pass, Solang Valley, Skiing</td>
+      <td><button class="table-button">Book Now</button></td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td>Kashmir</td>
+      <td>Kashmir Paradise</td>
+      <td>6 Days</td>
+      <td>₹18,000</td>
+      <td>Dal Lake, Gulmarg, Shikara Ride</td>
+      <td><button class="table-button">Book Now</button></td>
+    </tr>
+    <tr>
+      <td>3</td>
+      <td>Ladakh</td>
+      <td>Explore Ladakh</td>
+      <td>7 Days</td>
+      <td>₹22,000</td>
+      <td>Pangong Lake, Nubra Valley, Monasteries</td>
+      <td><button class="table-button">Book Now</button></td>
+    </tr>
+    <tr>
+      <td>4</td>
+      <td>Goa</td>
+      <td>Goa Beach Tour</td>
+      <td>4 Days</td>
+      <td>₹12,000</td>
+      <td>Beaches, Water Sports, Nightlife</td>
+      <td><button class="table-button">Book Now</button></td>
+    </tr>
+    <tr>
+      <td>5</td>
+      <td>Jaipur</td>
+      <td>Royal Jaipur</td>
+      <td>3 Days</td>
+      <td>₹10,000</td>
+      <td>Palaces, Forts, Rajasthani Cuisine</td>
+      <td><button class="table-button">Book Now</button></td>
+    </tr>
+    <tr>
+      <td>6</td>
+      <td>Kerala</td>
+      <td>Backwaters of Kerala</td>
+      <td>6 Days</td>
+      <td>₹19,000</td>
+      <td>Houseboat, Ayurveda, Beaches</td>
+      <td><button class="table-button">Book Now</button></td>
+    </tr>
+    <tr>
+      <td>7</td>
+      <td>Rishikesh</td>
+      <td>Spiritual Rishikesh</td>
+      <td>3 Days</td>
+      <td>₹9,000</td>
+      <td>River Rafting, Yoga, Ganga Aarti</td>
+      <td><button class="table-button">Book Now</button></td>
+    </tr>
+    <tr>
+      <td>8</td>
+      <td>Andaman Islands</td>
+      <td>Andaman Escape</td>
+      <td>5 Days</td>
+      <td>₹25,000</td>
+      <td>Snorkeling, Beaches, Cellular Jail</td>
+      <td><button class="table-button">Book Now</button></td>
+    </tr>
+    <tr>
+      <td>9</td>
+      <td>Darjeeling</td>
+      <td>Darjeeling Delight</td>
+      <td>4 Days</td>
+      <td>₹13,000</td>
+      <td>Toy Train, Tea Gardens, Tiger Hill</td>
+      <td><button class="table-button">Book Now</button></td>
+    </tr>
+  </tbody>
+</table>
