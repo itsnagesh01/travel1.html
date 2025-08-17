@@ -19,14 +19,16 @@
         }
 
         nav {
-            text-align: right;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: flex-end;
+            gap: 15px;
         }
 
         nav a {
             text-decoration: none;
             color: #fff;
             font-weight: bold;
-            margin: 0 15px;
             font-size: 18px;
         }
 
@@ -127,6 +129,28 @@
         .contact-info a:hover {
             text-decoration: underline;
         }
+
+        /* Responsive styles for smaller screens */
+        @media (max-width: 600px) {
+            nav {
+                flex-direction: column;
+                align-items: center;
+                text-align: center;
+            }
+
+            nav a {
+                font-size: 16px;
+            }
+
+            h1.page-title {
+                font-size: 32px;
+            }
+
+            fieldset {
+                width: 95%;
+                padding: 20px;
+            }
+        }
     </style>
 </head>
 
@@ -137,7 +161,6 @@
             <a href="index.html">Home</a>
             <a href="about.html">About</a>
             <a href="plans.html">Plans</a>
-        
             <a href="contact.html">Contact</a>
         </nav>
     </header>
@@ -159,8 +182,6 @@
             <label>Phone Number:</label>
             <input type="number" placeholder="Enter phone number" />
 
-            <label>Password:</label>
-            <input type="text" placeholder="Enter strong password" />
 
             <label>Your Plan:</label>
             <input type="text" placeholder="Enter your plan" />
@@ -176,19 +197,7 @@
 
     <hr>
 
-    <div style="width: 80%; margin: auto;">
-        <h2>Contact Information</h2>
-
-        <div class="contact-info">
-            <label>Email:</label>
-            <p><a href="mailto:thetrippygo@gmail.com">thetrippygo@gmail.com</a></p>
-        </div>
-
-        <div class="contact-info">
-            <label style="font-size: 20px;">office services:</label>
-            <p>+91-5876556784</p>
-        </div>
-    </div>
+    
 
 </body>
 
