@@ -15,58 +15,57 @@
     }
 
     body {
-      background-image: url('images1/home1.jpg'); /* Replace with your actual image path */
+      background-image: url('images1/home1.jpg');
       background-size: cover;
       background-position: center;
-      height: 100vh;
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+      min-height: 100vh;
       color: white;
-      overflow: hidden;
     }
 
     header {
-      padding: 20px 30px;
       display: flex;
-      flex-direction: row;
-      align-items: center;
-      justify-content: space-between;
       flex-wrap: wrap;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px 30px;
+      background: rgba(0, 0, 0, 0.4);
     }
 
     header h3 {
       font-size: 24px;
       color: #00ffcc;
-      animation: fadeInLeft 1s ease forwards;
     }
 
     nav {
       display: flex;
       flex-wrap: wrap;
+      justify-content: center;
     }
 
     nav a {
       text-decoration: none;
       color: white;
-      margin: 0 15px;
+      margin: 0 10px;
       font-weight: bold;
       position: relative;
-      transition: color 0.3s, transform 0.3s;
+      transition: color 0.3s;
     }
 
     nav a::after {
       content: '';
-      display: block;
+      position: absolute;
+      left: 0;
+      bottom: -5px;
       width: 0;
       height: 2px;
       background: #00ffcc;
       transition: width 0.3s;
-      position: absolute;
-      bottom: -5px;
-      left: 0;
     }
 
     nav a:hover {
       color: #00ffcc;
-      transform: translateY(-2px);
     }
 
     nav a:hover::after {
@@ -79,9 +78,8 @@
       align-items: center;
       justify-content: center;
       text-align: center;
-      height: 80vh;
+      height: calc(100vh - 100px);
       padding: 0 20px;
-      animation: fadeIn 2s ease-in-out;
     }
 
     .hero h1 {
@@ -95,65 +93,16 @@
       color: #D291BC;
       max-width: 600px;
       line-height: 1.6;
-      animation: slideInUp 1.5s ease-in-out;
     }
 
-    /* Animations */
-    @keyframes fadeIn {
-      from {
-        opacity: 0;
-        transform: translateY(20px);
-      }
-
-      to {
-        opacity: 1;
-        transform: translateY(0);
-      }
-    }
-
-    @keyframes fadeInLeft {
-      from {
-        opacity: 0;
-        transform: translateX(-50px);
-      }
-
-      to {
-        opacity: 1;
-        transform: translateX(0);
-      }
-    }
-
-    @keyframes slideInUp {
-      from {
-        opacity: 0;
-        transform: translateY(50px);
-      }
-
-      to {
-        opacity: 1;
-        transform: translateY(0);
-      }
-    }
-
-    /* Tablet */
     @media (max-width: 768px) {
       header {
         flex-direction: column;
-        align-items: center;
         text-align: center;
       }
 
-      nav {
-        justify-content: center;
-        flex-wrap: wrap;
-      }
-
-      nav a {
-        margin: 8px 10px;
-      }
-
       .hero h1 {
-        font-size: 36px;
+        font-size: 42px;
       }
 
       .hero p {
@@ -161,26 +110,20 @@
       }
     }
 
-    /* Smartphone */
     @media (max-width: 480px) {
       header {
         padding: 15px 20px;
       }
 
-      header h3 {
-        font-size: 20px;
-        margin-bottom: 10px;
-      }
-
       nav {
-        flex-direction: column;
-        align-items: center;
-        width: 100%;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
       }
 
       nav a {
-        margin: 10px 0;
-        display: block;
+        margin: 8px 10px;
+        font-size: 14px;
       }
 
       .hero h1 {
@@ -201,7 +144,6 @@
       <a href="index.html">Home</a>
       <a href="about.html">About</a>
       <a href="plans.html">Plans</a>
-  
       <a href="contact.html">Contact</a>
     </nav>
   </header>
