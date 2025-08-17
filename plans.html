@@ -2,13 +2,14 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Explore India - TrippyGo</title>
+
   <style>
     body {
-      margin: 0px;
-      padding: 0px;
+      margin: 0;
+      padding: 0;
       background: linear-gradient(to right, #e0f7fa, #fff3e0);
       font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
       color: #333;
@@ -19,7 +20,10 @@
     }
 
     nav {
-      text-align: right;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 10px;
       margin-top: 10px;
     }
 
@@ -27,8 +31,8 @@
       text-decoration: none;
       color: #333;
       font-weight: bold;
-      margin: 15px;
       font-size: 1.1em;
+      padding: 6px 12px;
       transition: color 0.3s;
     }
 
@@ -36,17 +40,14 @@
       color: blueviolet;
     }
 
-    h1 {
+    h1, h2 {
       text-align: center;
-      margin-top: 20px;
-      font-size: 2.5em;
       color: #5b3c5d;
+      margin-top: 20px;
     }
 
     h2 {
-      text-align: center;
-      margin-top: 60px;
-      font-size: 2em;
+      margin-top: 50px;
       color: #6e4a72;
     }
 
@@ -70,7 +71,7 @@
       height: 200px;
       object-fit: cover;
       border-radius: 8px;
-      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      transition: transform 0.3s ease;
       cursor: pointer;
       box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
     }
@@ -79,15 +80,9 @@
       transform: scale(1.05);
     }
 
-    .place-image:active {
-      transform: scale(0.97);
-      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
-    }
-
     .caption {
       margin-top: 8px;
       font-weight: bold;
-      font-size: 1.1em;
     }
 
     .book-button {
@@ -99,56 +94,14 @@
       border: none;
       border-radius: 6px;
       cursor: pointer;
-      transition: transform 0.2s ease, background-color 0.3s ease;
+      transition: background-color 0.3s ease;
     }
 
     .book-button:hover {
       background-color: #5b3c5d;
     }
 
-    .book-button:active {
-      transform: scale(0.95);
-      background-color: #4a384c;
-    }
-
-    table {
-      width: 90%;
-      margin: 40px auto;
-      border-collapse: collapse;
-      background-color: #fff;
-      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-      font-size: 16px;
-    }
-
-    th,
-    td {
-      padding: 15px;
-      text-align: left;
-      border: 1px solid #ddd;
-    }
-
-    thead {
-      background-color: #c09bc7;
-      color: white;
-    }
-
-    tbody tr:nth-child(even) {
-      background-color: #f2f2f2;
-    }
-
-    tbody tr:hover {
-      background-color: #e5d4ea;
-    }
-
-    th {
-      font-size: 18px;
-    }
-
-    td {
-      line-height: 1.6;
-    }
-
-    /* Responsive Design Starts Here */
+    /* Responsive Styles */
     @media (max-width: 1024px) {
       .image-container {
         width: 30%;
@@ -156,16 +109,6 @@
     }
 
     @media (max-width: 768px) {
-      nav {
-        text-align: center;
-      }
-
-      nav a {
-        display: inline-block;
-        margin: 5px 5px;
-        font-size: 1em;
-      }
-
       h1 {
         font-size: 2em;
       }
@@ -177,25 +120,31 @@
       .image-container {
         width: 45%;
       }
-
-      table {
-        font-size: 14px;
-      }
     }
 
     @media (max-width: 480px) {
       nav {
-        text-align: center;
+        flex-wrap: nowrap;
+        overflow-x: auto;
+        justify-content: flex-start;
         padding: 0 10px;
       }
 
       nav a {
-        display: block;
-        margin: 2px 0;
+        flex: 0 0 auto;
+        font-size: 1em;
+      }
+
+      h1 {
+        font-size: 1.6em;
+      }
+
+      h2 {
+        font-size: 1.3em;
       }
 
       .image-container {
-        width: 100%;
+        width: 48%;
       }
 
       .place-image {
@@ -205,21 +154,6 @@
       .book-button {
         font-size: 0.9em;
         padding: 8px 14px;
-      }
-
-      table,
-      th,
-      td {
-        font-size: 13px;
-        padding: 10px;
-      }
-
-      h1 {
-        font-size: 1.6em;
-      }
-
-      h2 {
-        font-size: 1.3em;
       }
     }
   </style>
@@ -232,7 +166,6 @@
       <a href="index.html">Home</a>
       <a href="about.html">About</a>
       <a href="plans.html">Plans</a>
-      
       <a href="contact.html">Contact</a>
     </nav>
   </header>
@@ -288,8 +221,7 @@
   </div>
 
   <h2>Travel Plans by Duration</h2>
-
-  <!-- Your table content remains unchanged -->
+  <!-- Add table or plan content here if needed -->
 
 </body>
 
