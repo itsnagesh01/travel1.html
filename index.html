@@ -18,31 +18,29 @@
       background-image: url('images1/home1.jpg'); /* Replace with your actual image path */
       background-size: cover;
       background-position: center;
-      background-repeat: no-repeat;
       height: 100vh;
       color: white;
+      overflow: hidden;
     }
 
     header {
       padding: 20px 30px;
       display: flex;
-      flex-direction: column;
+      flex-direction: row;
       align-items: center;
-      justify-content: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
     }
 
     header h3 {
       font-size: 24px;
       color: #00ffcc;
       animation: fadeInLeft 1s ease forwards;
-      margin-bottom: 10px;
     }
 
     nav {
       display: flex;
-      flex-direction: row;
       flex-wrap: wrap;
-      justify-content: center;
     }
 
     nav a {
@@ -139,6 +137,21 @@
 
     /* Tablet */
     @media (max-width: 768px) {
+      header {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+      }
+
+      nav {
+        justify-content: center;
+        flex-wrap: wrap;
+      }
+
+      nav a {
+        margin: 8px 10px;
+      }
+
       .hero h1 {
         font-size: 36px;
       }
@@ -146,28 +159,28 @@
       .hero p {
         font-size: 18px;
       }
-
-      nav a {
-        margin: 8px 10px;
-      }
     }
 
     /* Smartphone */
     @media (max-width: 480px) {
+      header {
+        padding: 15px 20px;
+      }
+
       header h3 {
         font-size: 20px;
         margin-bottom: 10px;
       }
 
       nav {
-        flex-direction: row;
-        flex-wrap: wrap;
-        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
       }
 
       nav a {
-        margin: 5px 8px;
-        font-size: 14px;
+        margin: 10px 0;
+        display: block;
       }
 
       .hero h1 {
@@ -176,7 +189,6 @@
 
       .hero p {
         font-size: 16px;
-        padding: 0 10px;
       }
     }
   </style>
